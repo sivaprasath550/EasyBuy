@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EasyBuy - Premium E-Commerce</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>EasyBuy</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-icons">
+            <div class="search-bar">
+                <input type="text" placeholder="Search products...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            <i class="fas fa-shopping-cart"></i>
+            <i class="fas fa-user"></i>
+            <div class="theme-toggle" onclick="toggleDarkMode()">
+                <i class="fas fa-moon" id="theme-icon"></i>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h2>Welcome to ShopEase</h2>
+        <p>Your One-Stop Online Store for the Latest Trends!</p>
+        <button>Explore Now</button>
+    </section>
+
+    <!-- Filters and Sorting -->
+    <div class="filters">
+        <select id="category-filter">
+            <option value="all">All Categories</option>
+            <option value="sneakers">Sneakers</option>
+            <option value="mobile">Mobile Phones</option>
+            <option value="watches">Watches</option>
+            <option value="handbags">Handbags</option>
+            <option value="headphones">Headphones</option>
+            <option value="laptop">Laptop</option>
+        </select>
+        <select id="price-sort">
+            <option value="default">Sort by Price</option>
+            <option value="low-to-high">Low to High</option>
+            <option value="high-to-low">High to Low</option>
+        </select>
+    </div>
+
+    <!-- Products Section -->
+    <section class="products">
+        <div class="product">
+            <i class="fas fa-heart wishlist-icon" onclick="toggleWishlist(this)"></i>
+            <img src="sneakers.jpg" alt="Stylish Sneakers">
+            <h2>Stylish Sneakers</h2>
+            <p>₹ 499</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <i class="fas fa-heart wishlist-icon" onclick="toggleWishlist(this)"></i>
+            <img src="mobile.avif" alt="Mobile Phone">
+            <h2>Mobile Phone</h2>
+            <p>₹ 14999</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <i class="fas fa-heart wishlist-icon" onclick="toggleWishlist(this)"></i>
+            <img src="watches.jpg" alt="Luxury Watch">
+            <h2>Luxury Watch</h2>
+            <p>₹ 999</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <i class="fas fa-heart wishlist-icon" onclick="toggleWishlist(this)"></i>
+            <img src="handbags.avif" alt="Elegant Handbag">
+            <h2>Elegant Handbag</h2>
+            <p>₹ 1299</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <i class="fas fa-heart wishlist-icon" onclick="toggleWishlist(this)"></i>
+            <img src="headphones.jpg" alt="Wireless Headphones">
+            <h2>Wireless Headphones</h2>
+            <p>₹ 899</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <i class="fas fa-heart wishlist-icon" onclick="toggleWishlist(this)"></i>
+            <img src="laptop.avif" alt="laptop">
+            <h2>Laptop</h2>
+            <p> ₹ 29990</p>
+            <button>Add to Cart</button>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="cta">
+        <p>Discover the latest trends and get exclusive deals. Shop Now!</p>
+        <button>Explore More</button>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 ShopEase. All rights reserved.</p>
+    <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+     </div>
+     <p class="created-by">
+        Created by <a href="https://siva-prasath-portfolio-550.vercel.app/" target="_blank">Siva Prasath</a> | 
+        <a href="https://github.com/sivaprasath550" target="_blank">GitHub</a>
+        </p>
+        
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
